@@ -1,12 +1,12 @@
 # num_gpu_optimize
 
-ollamaモデルの`num_gpu`パラメータを最適化するためのRustツールです。
+ollamaモデルの`num_gpu`パラメータを最適化するためのRustツールです。 週末の暇つぶし用
 
 ## 概要
 
 このツールは、ollamaモデルのGPUレイヤー数（`num_gpu`）を0から99まで5刻みで変化させながら実行し、各設定でのトークン生成速度とリソース使用率を計測します。これにより、お使いのPC環境に最適な`num_gpu`値を見つけることができます。 実行してみるとわかるとおり、ollama で igpu だと num_gpu は意味をもたないことがわかります。 AMD の Lemonade だと igpu を認識して実行し 6 〜 8 tokens/sec くらいのスペックです。
 このコードでは、ollama create する際の Modelsfile に記述した num_gpu を 0 から 99 の範囲で +5 しながら ollama run を繰り返して実行し、
---verbose を表示させます。
+--verbose を表示させます。 どうも igpu だと num_gpu が無視されてるくさいと思いやってみたら ollama やっぱりそうでした。
 
 ## 目的
 
