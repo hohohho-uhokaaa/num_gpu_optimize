@@ -1,4 +1,4 @@
-# num_gpu_optimize
+# num_gpu_optimize by Devin AI
 
 ollamaモデルの`num_gpu`パラメータを最適化するためのRustツールです。 週末の暇つぶし用
 
