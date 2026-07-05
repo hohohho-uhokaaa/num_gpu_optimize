@@ -1,25 +1,12 @@
 FROM Bonsai-8B.gguf
 
-# パラメータ設定
 PARAMETER num_gpu 99
-#PARAMETER num_predict 256
-#PARAMETER temperature 0.5
-#PARAMETER top_p 0.85
 PARAMETER top_k 20
-
-# 回答の多様性を増やす
 PARAMETER temperature 0.8
 PARAMETER top_p 0.95
-
-# 冗長な回答を許可する
 PARAMETER num_predict 512
-# システムプロンプト
+
 SYSTEM "あなたは経験豊富で優秀なコーディング能力を有するソフトウェア開発支援AIです"
-
-# 起動時の初期メッセージを定義
-# MESSAGE user "n! を計算するJavaコードを見せて"
-
-# 明示的にChatML形式（モデルが学習した形式）を指定する
 TEMPLATE """
 <|im_start|>system
 あなたは経験豊富で優秀なソフトウェア開発支援AIです。回答は詳細に、かつ複数の実装パターンがある場合は網羅的に提示してください。<|im_end|>
