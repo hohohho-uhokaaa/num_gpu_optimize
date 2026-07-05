@@ -1,0 +1,448 @@
+### Console print out edited
+### LLM: Bonsai-8B pulled from hg
+### ollama does not use num_gpu param do all on cpu never use igpu
+### on amd lemonade use igpu tokens/sec at 6 - 7 tks/sec
+
+$ ./num_gpu_optimize 
+--- テスト開始: num_gpu = 0 ---
+gathering model components 
+copying file sha256:284a335aa3fb2ced3b1b01fcb40b08aa783e3b70832767f0dd2e3fdfa134bd54 100% 
+parsing GGUF 
+verifying conversion 
+using existing layer sha256:284a335aa3fb2ced3b1b01fcb40b08aa783e3b70832767f0dd2e3fdfa134bd54 
+creating new layer sha256:3413ee10896372fdeb35e37b256fa87f480a29667c390be9ea1240f15909a0b8 
+creating new layer sha256:45d6f50a2a1ac3ed51ad0bc5d613e59239e8d910a598b67239bd09c5e7c77cc9 
+writing manifest 
+success 
+
+total duration:       1m7.088933133s
+load duration:        3.50382111s
+prompt eval count:    56 token(s)
+prompt eval duration: 8.245331s
+prompt eval rate:     6.79 tokens/s
+eval count:           256 token(s)
+eval duration:        55.316487s
+eval rate:            4.63 tokens/s
+
+  完了: 0.0 tokens/sec
+--- テスト開始: num_gpu = 5 ---
+gathering model components 
+copying file sha256:284a335aa3fb2ced3b1b01fcb40b08aa783e3b70832767f0dd2e3fdfa134bd54 100% 
+parsing GGUF 
+verifying conversion 
+using existing layer sha256:284a335aa3fb2ced3b1b01fcb40b08aa783e3b70832767f0dd2e3fdfa134bd54 
+creating new layer sha256:3413ee10896372fdeb35e37b256fa87f480a29667c390be9ea1240f15909a0b8 
+creating new layer sha256:e0a154f13e34f0f7c151b42871461b7c38fe9a60a52d9289cb049149b295133d 
+writing manifest 
+success 
+
+total duration:       1m6.415896498s
+load duration:        3.226957725s
+prompt eval count:    56 token(s)
+prompt eval duration: 8.511478999s
+prompt eval rate:     6.58 tokens/s
+eval count:           256 token(s)
+eval duration:        54.653403s
+eval rate:            4.68 tokens/s
+
+  完了: 0.0 tokens/sec
+--- テスト開始: num_gpu = 10 ---
+gathering model components 
+copying file sha256:284a335aa3fb2ced3b1b01fcb40b08aa783e3b70832767f0dd2e3fdfa134bd54 100% 
+parsing GGUF 
+verifying conversion 
+using existing layer sha256:284a335aa3fb2ced3b1b01fcb40b08aa783e3b70832767f0dd2e3fdfa134bd54 
+creating new layer sha256:3413ee10896372fdeb35e37b256fa87f480a29667c390be9ea1240f15909a0b8 
+creating new layer sha256:e8fa1c1b07550e14737c042dead6e6c256c2ff0a85e1b3b72895694553a49814 
+writing manifest 
+success 
+
+total duration:       1m10.312787075s
+load duration:        3.230797797s
+prompt eval count:    56 token(s)
+prompt eval duration: 8.337133s
+prompt eval rate:     6.72 tokens/s
+eval count:           256 token(s)
+eval duration:        58.716077s
+eval rate:            4.36 tokens/s
+
+  完了: 0.0 tokens/sec
+--- テスト開始: num_gpu = 15 ---
+gathering model components 
+copying file sha256:284a335aa3fb2ced3b1b01fcb40b08aa783e3b70832767f0dd2e3fdfa134bd54 100% 
+parsing GGUF 
+verifying conversion 
+using existing layer sha256:284a335aa3fb2ced3b1b01fcb40b08aa783e3b70832767f0dd2e3fdfa134bd54 
+creating new layer sha256:3413ee10896372fdeb35e37b256fa87f480a29667c390be9ea1240f15909a0b8 
+creating new layer sha256:1241d7fa4d3675a50e5a54489c5cd1c15574f22cfbe1ff589a78569621deb246 
+writing manifest 
+success 
+
+total duration:       1m8.164478535s
+load duration:        3.483631907s
+prompt eval count:    56 token(s)
+prompt eval duration: 8.495471s
+prompt eval rate:     6.59 tokens/s
+eval count:           256 token(s)
+eval duration:        56.161544s
+eval rate:            4.56 tokens/s
+
+  完了: 0.0 tokens/sec
+--- テスト開始: num_gpu = 20 ---
+gathering model components 
+copying file sha256:284a335aa3fb2ced3b1b01fcb40b08aa783e3b70832767f0dd2e3fdfa134bd54 100% 
+parsing GGUF 
+verifying conversion 
+using existing layer sha256:284a335aa3fb2ced3b1b01fcb40b08aa783e3b70832767f0dd2e3fdfa134bd54 
+creating new layer sha256:3413ee10896372fdeb35e37b256fa87f480a29667c390be9ea1240f15909a0b8 
+creating new layer sha256:67dd57c7d0d8983b8481e4a21ff0e8769f9ad4ff3bd06eaa7add6d68236357db 
+writing manifest 
+success 
+
+total duration:       1m7.035298958s
+load duration:        3.494487925s
+prompt eval count:    56 token(s)
+prompt eval duration: 8.306341s
+prompt eval rate:     6.74 tokens/s
+eval count:           256 token(s)
+eval duration:        55.211262s
+eval rate:            4.64 tokens/s
+
+  完了: 0.0 tokens/sec
+--- テスト開始: num_gpu = 25 ---
+gathering model components 
+copying file sha256:284a335aa3fb2ced3b1b01fcb40b08aa783e3b70832767f0dd2e3fdfa134bd54 100% 
+parsing GGUF 
+verifying conversion 
+using existing layer sha256:284a335aa3fb2ced3b1b01fcb40b08aa783e3b70832767f0dd2e3fdfa134bd54 
+creating new layer sha256:3413ee10896372fdeb35e37b256fa87f480a29667c390be9ea1240f15909a0b8 
+creating new layer sha256:e38e289c16a1d32d5c1882b6f880844ba2ddc8640bea024d9f5de1ed820c17ce 
+writing manifest 
+success 
+
+total duration:       1m6.614087268s
+load duration:        3.215375276s
+prompt eval count:    56 token(s)
+prompt eval duration: 8.460912s
+prompt eval rate:     6.62 tokens/s
+eval count:           256 token(s)
+eval duration:        54.912279s
+eval rate:            4.66 tokens/s
+
+  完了: 0.0 tokens/sec
+--- テスト開始: num_gpu = 30 ---
+gathering model components 
+copying file sha256:284a335aa3fb2ced3b1b01fcb40b08aa783e3b70832767f0dd2e3fdfa134bd54 100% 
+parsing GGUF 
+verifying conversion 
+using existing layer sha256:284a335aa3fb2ced3b1b01fcb40b08aa783e3b70832767f0dd2e3fdfa134bd54 
+creating new layer sha256:3413ee10896372fdeb35e37b256fa87f480a29667c390be9ea1240f15909a0b8 
+creating new layer sha256:e2c050624dffc3c75066226d23825774b3dcbf150312eb5993597309396af2c7 
+writing manifest 
+success 
+
+total duration:       1m12.347279029s
+load duration:        3.238947074s
+prompt eval count:    56 token(s)
+prompt eval duration: 8.412647s
+prompt eval rate:     6.66 tokens/s
+eval count:           256 token(s)
+eval duration:        1m0.671125s
+eval rate:            4.22 tokens/s
+
+  完了: 0.0 tokens/sec
+--- テスト開始: num_gpu = 35 ---
+gathering model components 
+copying file sha256:284a335aa3fb2ced3b1b01fcb40b08aa783e3b70832767f0dd2e3fdfa134bd54 100% 
+parsing GGUF 
+verifying conversion 
+using existing layer sha256:284a335aa3fb2ced3b1b01fcb40b08aa783e3b70832767f0dd2e3fdfa134bd54 
+creating new layer sha256:3413ee10896372fdeb35e37b256fa87f480a29667c390be9ea1240f15909a0b8 
+creating new layer sha256:09f15034a26dc24b6ffcae7edce1ec738a5658a42b2fe206fcbc8968b34c9950 
+writing manifest 
+success 
+
+total duration:       1m7.739200763s
+load duration:        3.239687962s
+prompt eval count:    56 token(s)
+prompt eval duration: 8.390955s
+prompt eval rate:     6.67 tokens/s
+eval count:           256 token(s)
+eval duration:        56.084062s
+eval rate:            4.56 tokens/s
+
+  完了: 0.0 tokens/sec
+--- テスト開始: num_gpu = 40 ---
+gathering model components 
+copying file sha256:284a335aa3fb2ced3b1b01fcb40b08aa783e3b70832767f0dd2e3fdfa134bd54 100% 
+parsing GGUF 
+verifying conversion 
+using existing layer sha256:284a335aa3fb2ced3b1b01fcb40b08aa783e3b70832767f0dd2e3fdfa134bd54 
+creating new layer sha256:3413ee10896372fdeb35e37b256fa87f480a29667c390be9ea1240f15909a0b8 
+creating new layer sha256:cc025bcab78df94609578871310f02cb7fd3dd8a2f576c509783ec817ee908c3 
+writing manifest 
+success 
+
+total duration:       1m8.217844736s
+load duration:        3.473632855s
+prompt eval count:    56 token(s)
+prompt eval duration: 8.815019s
+prompt eval rate:     6.35 tokens/s
+eval count:           256 token(s)
+eval duration:        55.904599s
+eval rate:            4.58 tokens/s
+
+  完了: 0.0 tokens/sec
+--- テスト開始: num_gpu = 45 ---
+gathering model components 
+copying file sha256:284a335aa3fb2ced3b1b01fcb40b08aa783e3b70832767f0dd2e3fdfa134bd54 100% 
+parsing GGUF 
+verifying conversion 
+using existing layer sha256:284a335aa3fb2ced3b1b01fcb40b08aa783e3b70832767f0dd2e3fdfa134bd54 
+creating new layer sha256:3413ee10896372fdeb35e37b256fa87f480a29667c390be9ea1240f15909a0b8 
+creating new layer sha256:bbe5b7b8a40a3bc6696afb479511fa90322aa7786352a164bb668a5f4e862d11 
+writing manifest 
+success 
+
+total duration:       1m6.5549905s
+load duration:        3.475976765s
+prompt eval count:    56 token(s)
+prompt eval duration: 8.332302s
+prompt eval rate:     6.72 tokens/s
+eval count:           256 token(s)
+eval duration:        54.71661s
+eval rate:            4.68 tokens/s
+
+  完了: 0.0 tokens/sec
+--- テスト開始: num_gpu = 50 ---
+gathering model components 
+copying file sha256:284a335aa3fb2ced3b1b01fcb40b08aa783e3b70832767f0dd2e3fdfa134bd54 100% 
+parsing GGUF 
+verifying conversion 
+using existing layer sha256:284a335aa3fb2ced3b1b01fcb40b08aa783e3b70832767f0dd2e3fdfa134bd54 
+creating new layer sha256:3413ee10896372fdeb35e37b256fa87f480a29667c390be9ea1240f15909a0b8 
+creating new layer sha256:63caa85069b53275d5111ea06fbe8c59ad8f25da42cf68b8a33e3f885cd33629 
+writing manifest 
+success 
+
+total duration:       1m29.428873169s
+load duration:        3.222297353s
+prompt eval count:    56 token(s)
+prompt eval duration: 8.218084s
+prompt eval rate:     6.81 tokens/s
+eval count:           256 token(s)
+eval duration:        1m17.960198s
+eval rate:            3.28 tokens/s
+
+  完了: 0.0 tokens/sec
+--- テスト開始: num_gpu = 55 ---
+gathering model components 
+copying file sha256:284a335aa3fb2ced3b1b01fcb40b08aa783e3b70832767f0dd2e3fdfa134bd54 100% 
+parsing GGUF 
+verifying conversion 
+using existing layer sha256:284a335aa3fb2ced3b1b01fcb40b08aa783e3b70832767f0dd2e3fdfa134bd54 
+creating new layer sha256:3413ee10896372fdeb35e37b256fa87f480a29667c390be9ea1240f15909a0b8 
+creating new layer sha256:9e67a1c7303f75fa6448bc75cd4c13bfca7f1c049faabad810a0b0660631d256 
+writing manifest 
+success 
+
+total duration:       1m1.135462211s
+load duration:        373.904316ms
+prompt eval count:    58 token(s)
+prompt eval duration: 193.2ms
+prompt eval rate:     300.21 tokens/s
+eval count:           256 token(s)
+eval duration:        1m0.513775s
+eval rate:            4.23 tokens/s
+
+  完了: 0.0 tokens/sec
+--- テスト開始: num_gpu = 60 ---
+gathering model components 
+copying file sha256:284a335aa3fb2ced3b1b01fcb40b08aa783e3b70832767f0dd2e3fdfa134bd54 100% 
+parsing GGUF 
+verifying conversion 
+using existing layer sha256:284a335aa3fb2ced3b1b01fcb40b08aa783e3b70832767f0dd2e3fdfa134bd54 
+creating new layer sha256:3413ee10896372fdeb35e37b256fa87f480a29667c390be9ea1240f15909a0b8 
+creating new layer sha256:3060787d3848c80fa83d5c348af592f98f2975f83f8ed0875acec2da63c81347 
+writing manifest 
+success 
+
+total duration:       1m9.251811725s
+load duration:        5.052157325s
+prompt eval count:    56 token(s)
+prompt eval duration: 8.708324s
+prompt eval rate:     6.43 tokens/s
+eval count:           256 token(s)
+eval duration:        55.462559s
+eval rate:            4.62 tokens/s
+
+  完了: 0.0 tokens/sec
+--- テスト開始: num_gpu = 65 ---
+gathering model components 
+copying file sha256:284a335aa3fb2ced3b1b01fcb40b08aa783e3b70832767f0dd2e3fdfa134bd54 100% 
+parsing GGUF 
+verifying conversion 
+using existing layer sha256:284a335aa3fb2ced3b1b01fcb40b08aa783e3b70832767f0dd2e3fdfa134bd54 
+creating new layer sha256:3413ee10896372fdeb35e37b256fa87f480a29667c390be9ea1240f15909a0b8 
+creating new layer sha256:5302a1703e4554f4d21a5c7d781e90b30d012c884ead9b72d078e6f6d6e969e9 
+writing manifest 
+success 
+
+total duration:       1m6.771687591s
+load duration:        3.228963173s
+prompt eval count:    56 token(s)
+prompt eval duration: 8.239982s
+prompt eval rate:     6.80 tokens/s
+eval count:           256 token(s)
+eval duration:        55.27526s
+eval rate:            4.63 tokens/s
+
+  完了: 0.0 tokens/sec
+--- テスト開始: num_gpu = 70 ---
+gathering model components 
+copying file sha256:284a335aa3fb2ced3b1b01fcb40b08aa783e3b70832767f0dd2e3fdfa134bd54 100% 
+parsing GGUF 
+verifying conversion 
+using existing layer sha256:284a335aa3fb2ced3b1b01fcb40b08aa783e3b70832767f0dd2e3fdfa134bd54 
+creating new layer sha256:3413ee10896372fdeb35e37b256fa87f480a29667c390be9ea1240f15909a0b8 
+creating new layer sha256:12d21c49537de30420831ff714990561d8a4405aa4bcc9f952f5076db8eb9824 
+writing manifest 
+success 
+
+total duration:       1m11.125300639s
+load duration:        5.560153024s
+prompt eval count:    56 token(s)
+prompt eval duration: 10.327773s
+prompt eval rate:     5.42 tokens/s
+eval count:           256 token(s)
+eval duration:        55.205983s
+eval rate:            4.64 tokens/s
+
+  完了: 0.0 tokens/sec
+--- テスト開始: num_gpu = 75 ---
+gathering model components 
+copying file sha256:284a335aa3fb2ced3b1b01fcb40b08aa783e3b70832767f0dd2e3fdfa134bd54 100% 
+parsing GGUF 
+verifying conversion 
+using existing layer sha256:284a335aa3fb2ced3b1b01fcb40b08aa783e3b70832767f0dd2e3fdfa134bd54 
+creating new layer sha256:3413ee10896372fdeb35e37b256fa87f480a29667c390be9ea1240f15909a0b8 
+creating new layer sha256:0619abfa13bc8e7903d8bee3b844c31d079e48eec36e737a5dc40a48e62231e4 
+writing manifest 
+success 
+
+total duration:       1m6.99938734s
+load duration:        3.233727086s
+prompt eval count:    56 token(s)
+prompt eval duration: 8.446103999s
+prompt eval rate:     6.63 tokens/s
+eval count:           256 token(s)
+eval duration:        55.29435s
+eval rate:            4.63 tokens/s
+
+  完了: 0.0 tokens/sec
+--- テスト開始: num_gpu = 80 ---
+gathering model components 
+copying file sha256:284a335aa3fb2ced3b1b01fcb40b08aa783e3b70832767f0dd2e3fdfa134bd54 100% 
+parsing GGUF 
+verifying conversion 
+using existing layer sha256:284a335aa3fb2ced3b1b01fcb40b08aa783e3b70832767f0dd2e3fdfa134bd54 
+creating new layer sha256:3413ee10896372fdeb35e37b256fa87f480a29667c390be9ea1240f15909a0b8 
+creating new layer sha256:c7d892617642c38d710d9db9b6f6dfe13b2b17934b0a98f1f01af8ab07971419 
+writing manifest 
+success 
+
+total duration:       1m7.005973057s
+load duration:        3.261130716s
+prompt eval count:    56 token(s)
+prompt eval duration: 8.407491s
+prompt eval rate:     6.66 tokens/s
+eval count:           256 token(s)
+eval duration:        55.310824s
+eval rate:            4.63 tokens/s
+
+  完了: 0.0 tokens/sec
+--- テスト開始: num_gpu = 85 ---
+gathering model components 
+copying file sha256:284a335aa3fb2ced3b1b01fcb40b08aa783e3b70832767f0dd2e3fdfa134bd54 100% 
+parsing GGUF 
+verifying conversion 
+using existing layer sha256:284a335aa3fb2ced3b1b01fcb40b08aa783e3b70832767f0dd2e3fdfa134bd54 
+creating new layer sha256:3413ee10896372fdeb35e37b256fa87f480a29667c390be9ea1240f15909a0b8 
+creating new layer sha256:e549df58454b29eb7d60cc5a8a55e6cb93e4abd7d4ade1c68829e1f1606324dd 
+writing manifest 
+success 
+
+total duration:       1m8.516781806s
+load duration:        3.236216897s
+prompt eval count:    56 token(s)
+prompt eval duration: 8.505164s
+prompt eval rate:     6.58 tokens/s
+eval count:           256 token(s)
+eval duration:        56.75185s
+eval rate:            4.51 tokens/s
+
+  完了: 0.0 tokens/sec
+--- テスト開始: num_gpu = 90 ---
+gathering model components 
+copying file sha256:284a335aa3fb2ced3b1b01fcb40b08aa783e3b70832767f0dd2e3fdfa134bd54 100% 
+parsing GGUF 
+verifying conversion 
+using existing layer sha256:284a335aa3fb2ced3b1b01fcb40b08aa783e3b70832767f0dd2e3fdfa134bd54 
+creating new layer sha256:3413ee10896372fdeb35e37b256fa87f480a29667c390be9ea1240f15909a0b8 
+creating new layer sha256:905e5f3c5f28b5297696fe9a2593aebc8f78fd65f4d2f10ce2f802fffbc9a1e1 
+writing manifest 
+success 
+
+total duration:       1m8.727943493s
+load duration:        4.555194509s
+prompt eval count:    56 token(s)
+prompt eval duration: 8.541531s
+prompt eval rate:     6.56 tokens/s
+eval count:           256 token(s)
+eval duration:        55.603716s
+eval rate:            4.60 tokens/s
+
+  完了: 0.0 tokens/sec
+--- テスト開始: num_gpu = 95 ---
+gathering model components 
+copying file sha256:284a335aa3fb2ced3b1b01fcb40b08aa783e3b70832767f0dd2e3fdfa134bd54 100% 
+parsing GGUF 
+verifying conversion 
+using existing layer sha256:284a335aa3fb2ced3b1b01fcb40b08aa783e3b70832767f0dd2e3fdfa134bd54 
+creating new layer sha256:3413ee10896372fdeb35e37b256fa87f480a29667c390be9ea1240f15909a0b8 
+creating new layer sha256:23a847c7419861b94c4a87a26a01d669a20e66f11bb90d306a8c090cb710123a 
+writing manifest 
+success 
+
+total duration:       1m6.724630967s
+load duration:        3.252945121s
+prompt eval count:    56 token(s)
+prompt eval duration: 8.358421s
+prompt eval rate:     6.70 tokens/s
+eval count:           256 token(s)
+eval duration:        55.084907s
+eval rate:            4.65 tokens/s
+
+--- テスト開始: num_gpu = 99 ---
+gathering model components 
+copying file sha256:284a335aa3fb2ced3b1b01fcb40b08aa783e3b70832767f0dd2e3fdfa134bd54 100% 
+parsing GGUF 
+verifying conversion 
+using existing layer sha256:284a335aa3fb2ced3b1b01fcb40b08aa783e3b70832767f0dd2e3fdfa134bd54 
+creating new layer sha256:3413ee10896372fdeb35e37b256fa87f480a29667c390be9ea1240f15909a0b8 
+creating new layer sha256:22b0f83eb525c1738493f3f4c117c28c96bf83795a728fd7bbf9aa257397397f 
+writing manifest 
+success 
+
+total duration:       58.118746423s
+load duration:        372.806211ms
+prompt eval count:    58 token(s)
+prompt eval duration: 188.212ms
+prompt eval rate:     308.16 tokens/s
+eval count:           256 token(s)
+eval duration:        57.531928s
+eval rate:            4.45 tokens/s
+
+  完了: 0.0 tokens/sec
+
+

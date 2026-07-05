@@ -1,0 +1,10 @@
+[package]
+name = "num_gpu_optimize"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+sysinfo = "0.39.5"
+chrono = "0.4"
+regex = "1.10"
+
